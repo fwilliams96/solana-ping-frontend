@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import { AppBar } from '../components/AppBar'
 import Head from 'next/head'
 import { PingButton } from '../components/PingButton'
+import { SendSol } from '../components/SendSol'
 
 const Home: NextPage = (props) => {
 
@@ -17,7 +18,8 @@ const Home: NextPage = (props) => {
       </Head>
         <AppBar />
         <div className={styles.AppBody}>
-          <PingButton/>
+          { /*<PingButton/>*/ }
+          <SendSol></SendSol>
         </div>
     </div>
   );
